@@ -9,7 +9,6 @@ const path = require('path');
 
 // Recupera i percorsi dei file dagli argomenti della riga di comando
 const jsonFilePath = process.argv[2];
-const textFilePath = process.argv[3];
 
 if (!jsonFilePath) {
     console.error('Errore: specifica il percorso del file JSON e del file di testo come argomenti.');
@@ -135,9 +134,6 @@ async function processJsonFile(jsonFilePath) {
         console.error('Errore durante l\'elaborazione:', error.message);
     }
 }
-
-// Avvio dello script
-// processJsonFile(jsonFilePath, textFilePath);
 
 // Inizia il processo
 processNews();
