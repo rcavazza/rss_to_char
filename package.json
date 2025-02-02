@@ -1,0 +1,30 @@
+{
+  "name": "rss_to_char",
+  "version": "1.0.0",
+  "description": "Fetch news articles from Google RSS feeds, generate concise summaries using a large language model (LLM), and integrate the output into an Eliza-style conversational character.",
+  "main": "spider.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rcavazza/rss_to_char.git"
+  },
+  "keywords": [
+    "elizaOS"
+  ],
+  "author": "Riccardo Cavazza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rcavazza/rss_to_char/issues"
+  },
+  "homepage": "https://github.com/rcavazza/rss_to_char#readme",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.7",
+    "openai": "^4.82.0",
+    "rss-parser": "^3.13.0",
+    "sqlite3": "^5.1.7"
+  }
+}
